@@ -1,12 +1,6 @@
-import {
-	Menu
-} from "../pages/menu"
-import {
-	LoginPage
-} from "../pages/login-page"
-import {
-	AdminPage
-} from "../pages/admin-page"
+import { Menu } from "../pages/menu"
+import { LoginPage } from "../pages/login-page"
+import { AdminPage } from "../pages/admin-page"
 
 
 // instances
