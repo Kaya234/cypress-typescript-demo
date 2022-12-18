@@ -1,4 +1,4 @@
-import {LoginPage} from "../pages/login-page"
+import { LoginPage } from "../pages/login-page"
 
 const loginPage = new LoginPage()
 
@@ -31,7 +31,7 @@ describe('Login Scenarios Tests - Login Page', () => {
 		it('Test 3 - Without password', () => {
 			loginPage.enterUsername(VALID_NAME)
 			loginPage.clickLogin()
-            loginPage.checkInputErrorPassword()
+			loginPage.checkInputErrorPassword()
 
 		})
 
@@ -79,7 +79,7 @@ describe('Login Scenarios Tests - Login Page', () => {
 		it('Test 2 - Click reset with username', () => {
 			loginPage.resetEnterUsername('admin')
 			loginPage.clickResetSubmit()
-            loginPage.checkResetSuccessInfo()
+			loginPage.checkResetSuccessInfo()
 
 		})
 
@@ -94,7 +94,7 @@ describe('Login Scenarios Tests - Login Page', () => {
 describe('Logout Tests', () => {
 
 	it.only('Test 1 - After logout, login inputs are empty', () => {
-        loginPage.login()
+		loginPage.login()
 		loginPage.logout()
 		loginPage.checkEmptyInputs()
 
