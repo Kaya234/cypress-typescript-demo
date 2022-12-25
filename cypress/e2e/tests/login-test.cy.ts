@@ -93,7 +93,7 @@ describe('Login Scenarios Tests - Login Page', () => {
 
 describe('Logout Tests', () => {
 
-	it.only('Test 1 - After logout, login inputs are empty', () => {
+	it('Test 1 - After logout, login inputs are empty', () => {
 		loginPage.login()
 		loginPage.logout()
 		loginPage.checkEmptyInputs()
