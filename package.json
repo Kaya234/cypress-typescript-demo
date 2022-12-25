@@ -1,37 +1,27 @@
 {
-  "name": "cypressd",
+  "name": "cypressts",
   "version": "1.0.0",
   "description": "",
-  "main": "cypress.config.js",
-  "scripts": {
-    "pretest": "rimraf -r ./cypress/reports/*.json",
-    "cy:test": "cypress run",
-    "cy:chrome": "cypress run --browser chrome",
-    "cy:firefox": "cypress run --browser firefox",
-    "cy:edge": "cypress run --browser edge",
-    "cy:electron": "cypress run --browser electron",
-    "cy:record": "cypress run --record --key ",
-    "cy:spec": "cypress run --spec ",
-    "posttest": "merge-reports && generate-htmlreport",
-    "cy:report": "cypress run --reporter mochawesome",
-    "cy:reportspec": "cypress run --spec cypress/e2e/visit.cy.js --reporter mochawesome",
-    "merge-reports": "mochawesome-merge ./cypress/reports/*.json > ./report1.json",
-    "generate-htmlreport": "merge ./report1.json --reportDir ./cypress/reports"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Kaya234/CypressDemo.git"
-  },
-  "author": "kaya",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Kaya234/CypressDemo/issues"
-  },
-  "homepage": "https://github.com/Kaya234/CypressDemo#readme",
+  "main": "index.js",
   "dependencies": {
+    "cypress": "^12.2.0",
+    "mocha": "^10.2.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.2.2",
     "mochawesome-report-generator": "^6.2.0",
-    "rimraf": "^3.0.2"
-  }
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {},
+  "homepage": ""
 }
